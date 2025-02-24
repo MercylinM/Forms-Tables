@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sign_Up</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        .sign_up {
+            display: block;
+            margin: 30px auto ;
+            box-shadow: 10px 10px 10px 10px rgb(201, 200, 200);
+            background-color: white;
+            max-width: 700px;
+            padding: 20px;
+        }
+
+        #form{
+            width: 70%;
+            margin: 50px auto;
+        }
+
+        #name, #email, #password{
+            width: 100%;
+            margin: 10px 0;
+            height: 30px;
+
+        }
+
+        a{
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+
+        #submit_button{
+            width: 100%;
+            text-align: center;
+            background-color: rgb(20, 20, 20);
+            color: white;
+            height: 50px;
+            cursor: pointer;
+            border: none;
+            margin-top: 20PX;
+
+        }
+
+        h1{
+            margin-top: 50px;
+        }
+         
+
+        .p-lines{
+            position: relative;
+            max-width: 500px;
+            margin: 50px auto;
+            text-align: center;
+            
+        }
+
+        .p-lines:before{
+            content:"";
+            height: 2px;
+            width: 180px;
+            background: gray;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+
+        .p-lines:after{
+            content:"";
+            height: 2px;
+            width: 180px;
+            background: gray;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="sign_up">
+
+
+        <form action="sign_in.html" id="form">
+            <p>Already have an account? <a href="sign_in.html">Sign In</a></p>
+
+            <h1>Sign Up</h1>
+
+            <label for="name">
+                Name:
+            </label>
+            <input type="text" name="name" id="name" placeholder="Sadegh" required>
+
+            <label for="email">
+                Email:
+            </label>
+            <input type="email" name="email" id="email" placeholder="Sadeqsaadi2@Gmail.Com" required>
+
+            <label for="password">
+                Password
+            </label>
+            <input type="password" name="password" id="password" required>
+
+            <input type="checkbox" name="checkbox" id="checkbox" required>
+            <label for="checkbox">I've Read And Agree With The <a href="#" >Terms Of Service</a> And Our <a href="">Privacy Policy</a></label>
+
+            <button type="submit" id="submit_button">Sign Up</button>
+
+            <p class="p-lines">Or Sign Up With</p>
+
+
+            <div class="">
+                <i class="fa fa-google"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
