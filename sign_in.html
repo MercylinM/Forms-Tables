@@ -11,12 +11,15 @@
             background-color: beige;
         }
         .sign_in {
-            display: block;
-            margin: 30px auto ;
-            box-shadow: 10px 10px 10px 10px rgb(231, 230, 230);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto ;
+            box-shadow: 8px 8px 7px 7px rgb(231, 230, 230), -8px -8px 7px 7px rgb(231, 230, 230);
             background-color: white;
             max-width: 700px;
             padding: 20px;
+            height: 800px;
         }
 
         #form{
@@ -26,7 +29,8 @@
 
         #email, #password{
             width: 100%;
-            margin: 10px 0;
+            margin-bottom: 20px;
+            margin-top: 10px;
             height: 30px;
 
         }
@@ -87,6 +91,7 @@
         .icons{
             text-align: center;
             justify-content: center;
+            font-size: large;
         }
 
         #shadowed{
@@ -105,12 +110,12 @@
             padding: 2px;
             margin-left: 20px;
             cursor: pointer;
+            text-align: center;
         }
-
-
-
-
         
+        span{
+            font-weight: 500px;
+        }
     </style>
 </head>
 <body>
@@ -122,17 +127,17 @@
             </p>
             <h1>Sign In</h1>
 
-            <label for="email">Email: </label>
+            <label for="email"><span>Email:</span></label>
             <br>
             <input type="email" name="email" id="email" placeholder="Enter your email" required>
 
             <br>
-            <label for="password">Password: </label>
+            <label for="password"><span>Password: </span></label>
             <br>
             <input type="password" name="password" id="password" placeholder="Enter your password" required>
 
             
-            <input type="checkbox" name="checkbox" id="checkbox" required><label for="checkbox"> I've Read And Agree With The <a href="#" >Terms Of Service</a> And Our <a href="#">Privacy Policy</a></label>
+            <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox" required> I've Read And Agree With The <a href="#" >Terms Of Service</a> And Our <a href="#">Privacy Policy</a></label>
 
             <br>
             <button type="submit" id="submit_button">
@@ -143,8 +148,8 @@
 
 
             <div class="icons">
-                <i class="fa fa-google" aria-hidden="true" id="shadowed"></i>
-                <i class="fa fa-facebook" aria-hidden="true" id="rounded"></i>
+                <i class="fa fa-google" id="shadowed"></i>
+                <i class="fa fa-facebook" id="rounded"></i>
             </div>
             
         </form>

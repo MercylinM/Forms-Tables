@@ -10,24 +10,32 @@
             background-color: beige;
         }
         .sign_up {
-            display: block;
-            margin: 30px auto ;
-            box-shadow: 10px 10px 10px 10px rgb(201, 200, 200);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto ;
+            box-shadow: 8px 8px 7px 7px rgb(231, 230, 230), -8px -8px 7px 7px rgb(231, 230, 230);
             background-color: white;
             max-width: 700px;
+            height: 800px;
             padding: 20px;
         }
 
         #form{
-            width: 70%;
+            width: 80%;
             margin: 50px auto;
         }
 
         #name, #email, #password{
             width: 100%;
-            margin: 10px 0;
+            margin-bottom: 20px;
+            margin-top: 10px;
             height: 30px;
 
+        }
+        
+        #name label{
+            font-weight: bold;
         }
 
         a{
@@ -52,6 +60,9 @@
             margin-top: 50px;
         }
          
+        span{
+            font-weight: 500px;
+        }
 
         .p-lines{
             position: relative;
@@ -83,6 +94,30 @@
             right: 0;
         }
 
+        .icons{
+            text-align: center;
+            justify-content: center;
+            font-size: large;
+        }
+
+        #shadowed{
+            box-shadow: 5px 5px 5px 5px rgb(221, 221, 221);
+            padding: 8px;
+            margin-right: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #rounded {
+            border-radius: 50%;
+            color: white;
+            background-color: black;
+            width: 18px;
+            padding: 2px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
 
         
     </style>
@@ -97,19 +132,21 @@
             <h1>Sign Up</h1>
 
             <label for="name">
-                Name:
+                <span>
+                    Name:
+                </span>
             </label>
-            <input type="text" name="name" id="name" placeholder="Sadegh" required>
+            <input type="text" name="name" id="name" placeholder="Enter Name" required>
 
             <label for="email">
-                Email:
+                <span>Email: </span>
             </label>
-            <input type="email" name="email" id="email" placeholder="Sadeqsaadi2@Gmail.Com" required>
+            <input type="email" name="email" id="email" placeholder="Enter email" required>
 
             <label for="password">
-                Password
+                <span>Password: </span>
             </label>
-            <input type="password" name="password" id="password" required>
+            <input type="password" name="password" id="password" placeholder="Enter password" required>
 
             <input type="checkbox" name="checkbox" id="checkbox" required>
             <label for="checkbox">I've Read And Agree With The <a href="#" >Terms Of Service</a> And Our <a href="">Privacy Policy</a></label>
@@ -119,9 +156,9 @@
             <p class="p-lines">Or Sign Up With</p>
 
 
-            <div class="">
-                <i class="fa fa-google"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
+            <div class="icons">
+                <i class="fa fa-google" id="shadowed"></i>
+                <i class="fa fa-facebook" id="rounded"></i>
             </div>
 
         </form>
